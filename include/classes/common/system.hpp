@@ -29,8 +29,7 @@ struct System {
                     syscfg.push_back(cfg);
                     if (key == "name") name = value;
                     if (key == "os") os = os_string_to_enum(value);
-                    if (key == "ip") ip = ip_string_to_ip(l, value);
-                    
+                    if (key == "ip") ip = ip_string_to_ip(value);
                     if (key == "creds") creds = populate_credentials(value);
                 }
             }
