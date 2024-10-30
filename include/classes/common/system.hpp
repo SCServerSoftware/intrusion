@@ -10,7 +10,7 @@ struct System {
     std::string name;
     Operating_System os;
     IP_Address ip = default_ip;
-    std::vector<Credentials> valid_credentials = {};
+    std::vector<Credentials> creds = {};
     std::vector<Folder> folders = {};
     // Takes from a config file
     System(std::string config_path) {
@@ -31,6 +31,7 @@ struct System {
                     if (key == "os") os = os_string_to_enum(value);
                     if (key == "ip") ip = ip_string_to_ip(l, value);
                     
+                    if (key == "creds") creds = populate_credentials(value);
                 }
             }
         }
