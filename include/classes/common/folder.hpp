@@ -8,11 +8,11 @@ struct Folder {
     std::string name;
     std::vector<File> files = {};
     std::optional<std::string> password;
-    std::optional<int> permission_integer = 3; // `3` for `all`, `2` for authorised user, `1` for admin/sudo, `0` for root
+    int permission_integer = 3; // `3` for `all`, `2` for authorised user, `1` for admin/sudo, `0` for root
     Folder(std::string name,
            std::vector<File> files,
            std::optional<std::string> password = std::nullopt,
-           std::optional<int> permission_integer)
+           int permission_integer)
         : name(name),
           files(files),
           password(password),
