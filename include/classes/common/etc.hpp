@@ -7,6 +7,7 @@
 struct Credentials {
     std::string username;
     std::string password;
+    int permission_integer = 3; // `3` for `all`, `2` for authorised user, `1` for admin/sudo, `0` for root
     Credentials(std::string username,
                 std::string password)
                : username(username),
