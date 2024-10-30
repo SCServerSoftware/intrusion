@@ -32,8 +32,8 @@ Operating_System os_string_to_enum(std::string os) {
     if (os == "freedos") return FREEDOS;                        if (os == "templeos") return TEMPLEOS;
 }
 
-IP_Address ip_string_to_ip(std::string& l, std::string& value) {
-    size_t coord = l.find('.');
+IP_Address ip_string_to_ip(std::string& value) {
+    size_t coord = value.find('.');
     std::vector<int> coords;
     size_t start = 0;
     size_t end;
