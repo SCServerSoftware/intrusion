@@ -48,7 +48,6 @@ IP_Address ip_string_to_ip(std::string& l, std::string& value) {
 
 std::vector<Credentials> populate_credentials(std::string& l) {
     std::vector<Credentials> creds;
-    
     std::regex credsPattern(R"(\[([^\]]+),([^\]]+)\])");
     auto credsBegin = std::sregex_iterator(l.begin(), l.end(), credsPattern);
     auto credsEnd = std::sregex_iterator();
@@ -59,7 +58,6 @@ std::vector<Credentials> populate_credentials(std::string& l) {
         std::string password = match[2].str();
         creds.emplace_back(username, password);
     }
-    
     return creds;
 }
 
