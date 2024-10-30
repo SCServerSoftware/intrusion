@@ -23,5 +23,6 @@ namespace fs = std::filesystem;
 #include "classes/common/network.hpp"
 #include "classes/common/system.hpp"
 #include "classes/common/terminal.hpp"
+#include "classes/common/functions/conversions.hpp"
 
 #endif
