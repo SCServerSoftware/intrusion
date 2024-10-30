@@ -12,6 +12,7 @@
 #include <sstream>
 #include <unordered_map>
 #include <cctype>
+#include <regex>
 
 namespace fs = std::filesystem;
 
