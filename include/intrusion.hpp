@@ -22,6 +22,7 @@ namespace fs = std::filesystem;
 #include "classes/common/etc.hpp"
 #include "classes/common/file.hpp"
 #include "classes/common/folder.hpp"
+#include "classes/common/hexlock.hpp"
 #include "classes/common/network.hpp"
 #include "classes/common/system.hpp"
 #include "classes/common/terminal.hpp"
