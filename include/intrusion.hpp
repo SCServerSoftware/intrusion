@@ -13,6 +13,8 @@
 #include <unordered_map>
 #include <cctype>
 #include <regex>
+#include <random>
+#include <ctime>
 
 namespace fs = std::filesystem;
 
