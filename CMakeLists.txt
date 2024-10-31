@@ -23,3 +23,9 @@ elseif(APPLE)
 elseif(UNIX)
     target_compile_definitions(intrusion PRIVATE WITH_ALSA=1 WITH_PULSEAUDIO=1)
 endif()
+
+# Set C++ version
+set_target_properties(intrusion PROPERTIES
+    CXX_STANDARD 20 # I need the modules badly
+    CXX_STANDARD_REQUIRED ON
+)
